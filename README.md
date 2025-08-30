@@ -8,6 +8,9 @@ PreduskTech Dashboard is a React-based web application that allows users to:
 
 The backend is powered by **Supabase**, providing a REST API for fetching and managing profiles, projects, and skills.
 
+## Credentials:
+  - bhakarajay033@gmail.com(for profile fetching)
+  - reactjs (skills)
 
 ## ScreenShots
 <img width="1892" height="863" alt="image" src="https://github.com/user-attachments/assets/d8ede49f-2e02-4f49-aa0b-c38c1495925b" />
