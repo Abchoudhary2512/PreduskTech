@@ -2,14 +2,19 @@ import supabase from "../config/supabase.js";
 
 export const getProfileByEmail = async (req, res) => {
   const { email } = req.params;
-  const { data, error } = await supabase
-    .from("profiles")
-    .select("*, skills(*), projects(*), work(*), links(*)")
-    .eq("email", email)
-    .single();
+ const { data, error } = await supabase
+  .from("profiles")
+  .select("*, skills(*), projects(*), work(*), links(*)")
+  .eq("email", email)
+  .single();
 
-  if (error) return res.status(400).json({ error: error.message });
-  res.json(data);
+if (error) return res.status(400).json({ error: error.message });
+
+// convert links array to single object for frontend
+const linksObj = data.links?.[0] || null;
+
+res.json({ ...data, links: linksObj });
+
 };
 
 export const createProfile = async (req, res) => {

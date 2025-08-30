@@ -143,37 +143,45 @@ function ProfilePanel() {
               </section>
             )}
 
-            {data.links && (
-              <section className="grid gap-1">
-                <h4 className="font-semibold">Links</h4>
-                <div className="text-sm">
-                  {data.links.github && (
-                    <p>
-                      GitHub:{" "}
-                      <a className="text-primary underline" href={data.links.github} target="_blank" rel="noreferrer">
-                        {data.links.github}
-                      </a>
-                    </p>
+            {data.links?.length > 0 && (
+              <section className="mt-4">
+                <h4 className="font-semibold mb-2">Links</h4>
+                <div className="flex flex-wrap gap-4">
+                  {data.links[0].github && (
+                    <a
+                      href={data.links[0].github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="px-3 py-1 bg-gray-100 text-blue-600 font-medium rounded hover:bg-blue-50 hover:underline transition"
+                    >
+                      GitHub
+                    </a>
                   )}
-                  {data.links.linkedin && (
-                    <p>
-                      LinkedIn:{" "}
-                      <a className="text-primary underline" href={data.links.linkedin} target="_blank" rel="noreferrer">
-                        {data.links.linkedin}
-                      </a>
-                    </p>
+                  {data.links[0].linkedin && (
+                    <a
+                      href={data.links[0].linkedin}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="px-3 py-1 bg-gray-100 text-blue-600 font-medium rounded hover:bg-blue-50 hover:underline transition"
+                    >
+                      LinkedIn
+                    </a>
                   )}
-                  {data.links.portfolio && (
-                    <p>
-                      Portfolio:{" "}
-                      <a className="text-primary underline" href={data.links.portfolio} target="_blank" rel="noreferrer">
-                        {data.links.portfolio}
-                      </a>
-                    </p>
+                  {data.links[0].portfolio && (
+                    <a
+                      href={data.links[0].portfolio}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="px-3 py-1 bg-gray-100 text-blue-600 font-medium rounded hover:bg-blue-50 hover:underline transition"
+                    >
+                      Portfolio
+                    </a>
                   )}
                 </div>
               </section>
             )}
+
+
           </div>
         )}
       </CardContent>
