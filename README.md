@@ -84,3 +84,11 @@ The backend is powered by **Supabase**, providing a REST API for fetching and ma
   3. Data Validation: Minimal data validation is performed; ensure data integrity at the application level.
 
   4. Error Handling: Basic error handling is in place; consider implementing more robust error handling for production environments.
+
+### Resume Link and my works:
+  - https://drive.google.com/file/d/1pzblFeNIolZekanJaloLGBzQXU8nvinj/view
+  - https://hirrd-brown.vercel.app/
+  - https://reactvisualizer.vercel.app/
+  - https://hash-encrypt-tool.vercel.app/
+  - https://linea-cook-off.vercel.app/
+  - 
