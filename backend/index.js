@@ -73,17 +73,6 @@ app.get("/projects", async (req, res) => {
   res.json(data);
 });
 
-// Top skills (group + count)
-app.get("/skills/top", async (req, res) => {
-  const { data, error } = await supabase
-    .from("skills")
-    .select("skill_name, count:skill_name")
-    .group("skill_name")
-    .order("count", { ascending: false });
-
-  if (error) return res.status(400).json({ error: error.message });
-  res.json(data);
-});
 
 
 app.get("/search", async (req, res) => {
