@@ -38,7 +38,7 @@ The backend is powered by **Supabase**, providing a REST API for fetching and ma
 
 ### Backend
 
-- **Server:** Node.js / Express or Next.js API routes
+- **Server:** Node.js + Express 
 - **Database:** Supabase (PostgreSQL)
 - **Responsibilities:**
   - CRUD operations on profiles
