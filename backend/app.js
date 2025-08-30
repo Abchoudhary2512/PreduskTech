@@ -8,7 +8,14 @@ import searchRoutes from "./routes/searchRoutes.js";
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://predusk-tech.vercel.app", // only allow your frontend
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    credentials: true,
+  })
+);
+
 app.use(bodyParser.json());
 
 // Health check

@@ -8,7 +8,9 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { Badge } from "@/components/ui/badge"
 import useSWRMutation from "swr/mutation"
 
-const API = "http://localhost:5000"
+
+const API = 'https://predusktech.onrender.com'
+// console.log(API)
 
 // Helpers
 const jsonFetcher = async (url) => {
