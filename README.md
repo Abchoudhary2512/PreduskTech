@@ -14,6 +14,9 @@ The backend is powered by **Supabase**, providing a REST API for fetching and ma
 <img width="1367" height="817" alt="image" src="https://github.com/user-attachments/assets/b2178d9f-493d-4e2a-929a-b85beb153a9f" />
 <img width="922" height="679" alt="image" src="https://github.com/user-attachments/assets/680c9d55-64a9-4a10-a8d0-77bbdeecfda1" />
 <img width="1304" height="311" alt="image" src="https://github.com/user-attachments/assets/50af7a18-9a61-40d1-b883-d87ecc15e55a" />
+<img width="1670" height="783" alt="image" src="https://github.com/user-attachments/assets/59240187-b97a-41fd-b8b2-d3fe0a022d56" />
+<img width="1718" height="868" alt="image" src="https://github.com/user-attachments/assets/31e7a21e-7539-4c6e-8b29-ab2b9f386200" />
+
 
 
 ## Architecture
