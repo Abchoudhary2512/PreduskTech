@@ -23,7 +23,7 @@ The backend is powered by **Supabase**, providing a REST API for fetching and ma
 
 ### Frontend
 
-- **Framework:** React (Next.js)
+- **Framework:** React 
 - **UI Components:** Shadcn/UI, TailwindCSS
 - **Data Fetching:** `useSWRMutation`
 - **Notifications:** `react-hot-toast`
